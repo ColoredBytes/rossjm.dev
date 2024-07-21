@@ -77,10 +77,10 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 There is a chance that it may be installed. But is not installed correctly. In that case follow these steps.
 
 Search for the store as shown below.
-![open-microsoft-store](/images/open-microsoft-store.png)
+![open-microsoft-store](/static/images/blog/open-microsoft-store.png)
 
 After that type in winget as shown below
-![search-for-winget-in-microsoft-store](/images/search-for-winget-in-microsoft-store.png)
+![search-for-winget-in-microsoft-store](/static/images/blog/search-for-winget-in-microsoft-store.png)
 
 From there just install or wait for it to update as sometimes on new installs it does need to update itself.
 After all is said and done you can start installing stuff or even try and write a script with it. Try looking at [winstall](https://winstall.app) for apps that you can download.
