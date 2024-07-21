@@ -1,0 +1,157 @@
+baseURL: "https://rossjm.deb"
+languageCode: "en-us"
+title: "Joshua Ross"
+theme: ["hugo-notice", "hugo-profile"]
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blog
+      weight: 1
+params:
+  css:
+    - css/custom.css
+  title: "Joshua Ross"
+  description: Text about my cool site 
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+  
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    brandName: "Joshua Ross" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Joshua Ross"
+    subtitle: "IT Analyst"
+    content: "HomeLab Enthusiast, Linux Enthusiast and Lover of IT."
+    image: /images/avataaars.png
+    button:
+      enable: false
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/ColoredBytes
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/joshuamalcom/
+  
+   # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.jpg"
+    content: |-
+      I’m a a 33-year-old IT Nerd living in MI. I work in the public sector as an IT Analyst focusing mainly on Hosting Automation.I’ve worked in IT-related roles for about 5 years now officially. I’ve been working on computers and my Homelab for about 10+ years. I’ve created this site to sharpen my skills in web hosting and also share my thoughts among other things. Thanks for coming and hope you enjoy the reads.
+  
+   # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Information Technology Analyst"
+        company: "State of Michigan"
+        companyUrl: "https://www.reassure.co.uk"
+        date: "May 2023 - Present"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+        content: | 
+                - Analyze, develop, test, configure, implement, and maintain a variety of hardware and application platforms.
+                - Works with other teams to deploy servers based on their needs.
+                - Provide support for a variety of third-party software.
+      - job: "Migrations Technician"
+        company: "Liquid Web"
+        companyUrl: "https://www.reassure.co.uk"
+        date: "May 2023 - Present"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+        content: |
+          Worked with Customers in moving their sites to more suitable solutions based on their needs.
+          - Communicated with customers via various mediums.
+          - Migration of customer data (both internally and externally) across various platforms.
+          - Provide support for a variety of third-party software under beyond-scope support.
+     # Achievements
+  achievements:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: ITIL v4 Foundation
+        content: TIL 4 Foundation introduces an end-to-end operating model for the creation, delivery and continual improvement of technology-enabled products and services
+        # url: https://example.com
+      # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Vaultwarden
+        content: Self Hosted Password Manager, Hosted in Docker and allows Registrations so anyone can signup this is a free service I offer.
+        image: /images/projects/vaultwarden-light.png
+        featured:
+          name: Project Website
+          link: https://vault.jersh.tech
+        badges:
+          - "Docker"
+          - "Privacy"
+          - "Linux"
+    #Contact
+  contact:
+    enable: true
+    index: false
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: contact@rossjm.dev
+    btnName: Mail me
+  
+  footer:
+    recentPosts:
+      path: "blog"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
