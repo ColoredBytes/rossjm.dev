@@ -24,10 +24,13 @@ markup:
 Menus:
   main:
     - identifier: blog
-      name: Blog
-      title: Blog posts
+      name: Posts
+      title: Posts
       url: /blog
       weight: 1
+    - identifier: nopaste
+      name: NoPaste
+      url: /nopaste
 params:
   css:
     - css/custom.css
